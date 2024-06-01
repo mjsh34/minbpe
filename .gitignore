@@ -4,3 +4,7 @@ models/**/*
 *.pytest_cache
 *.model
 *.vocab
+
+*.sw*
+/.venv/
+.ipynb_checkpoints/

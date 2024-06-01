@@ -1,3 +1,26 @@
+# Fork of minbpe
+This fork of [karpathy/minbpe](https://github.com/karpathy/minbpe) contains original implementations of various tokenizers.
+
+## Walkthrough
+See [exercises/Tokenization.ipynb](exercises/Tokenization.ipynb).
+
+## Exercises
+To debug tokenizers, run:
+```sh
+python -m exercises.tokenizers
+```
+
+To run a more in-depth test on all tokenizers run:
+```sh
+pytest -v
+``` 
+
+### BasicTokenizer
+See [exercises/tokenizers.py](exercises/tokenizers.py)
+
+
+---
+
 # minbpe
 
 Minimal, clean code for the (byte-level) Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization. The BPE algorithm is "byte-level" because it runs on UTF-8 encoded strings.

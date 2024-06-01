@@ -1,2 +1,4 @@
 regex
 tiktoken
+tqdm
+pytest
