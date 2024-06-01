@@ -4,7 +4,7 @@ This fork of [karpathy/minbpe](https://github.com/karpathy/minbpe) contains orig
 ## Walkthrough
 See [exercises/Tokenization.ipynb](exercises/Tokenization.ipynb).
 
-## Exercises
+## [Exercises](exercise.md)
 To debug tokenizers, run:
 ```sh
 python -m exercises.tokenizers
@@ -15,7 +15,7 @@ To run a more in-depth test on all tokenizers run:
 pytest -v
 ``` 
 
-### BasicTokenizer
+### BasicTokenizer, RegexTokenizer
 See [exercises/tokenizers.py](exercises/tokenizers.py)
 
 

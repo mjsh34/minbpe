@@ -4,6 +4,7 @@ import os
 
 from minbpe import BasicTokenizer, RegexTokenizer, GPT4Tokenizer
 from exercises import BasicTokenizer as ExBasicTokenizer
+from exercises import RegexTokenizer as ExRegexTokenizer
 
 # -----------------------------------------------------------------------------
 # common test data
@@ -51,7 +52,7 @@ The ancestors of llamas are thought to have originated from the Great Plains of 
 
 # test encode/decode identity for a few different strings
 @pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer, GPT4Tokenizer,
-                                               ExBasicTokenizer])
+                                               ExBasicTokenizer, ExRegexTokenizer])
 @pytest.mark.parametrize("text", test_strings)
 def test_encode_decode_identity(tokenizer_factory, text):
     text = unpack(text)
@@ -80,7 +81,7 @@ def test_gpt4_tiktoken_equality_special_tokens():
 
 # reference test to add more tests in the future
 @pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer,
-                                               ExBasicTokenizer])
+                                               ExBasicTokenizer, ExRegexTokenizer])
 def test_wikipedia_example(tokenizer_factory):
     """
     Quick unit test, following along the Wikipedia example:
